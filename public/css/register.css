@@ -1,0 +1,71 @@
+main{
+    margin-bottom: 20px;
+}
+section .register h2{
+    margin-top: 4px;
+}
+
+.contenedor-registro{
+    background: rgb(114,236,10);
+    background: linear-gradient(0deg, rgba(236, 10, 225, 0.295) 1%, rgba(232,135,230,0.7347981428899685) 8%, rgb(237, 237, 237) 11%);
+    width: 75%;
+    height: 450px;
+    margin-top: 4px;
+    border-radius: 6px;
+    margin: auto;
+    padding: 3px;
+    
+}
+.contenedor-registro label{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+.contenedor-registro input{
+    display: flex;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    padding: 1px;
+    border: rgba(21, 4, 106, 0.815) 1px solid;
+    
+}
+input[type="file" i]{
+    font-size: 12px;
+    width: 180px;
+    margin-left: 60px;
+    border-image: none;
+    border: none;
+    
+}
+
+.contenedor-registro button{
+    position: relative;
+    margin-top: 25px;
+    left: 100px;
+    width: 110px;
+    text-decoration: none;
+    background-color: rgba(12, 2, 63, 0.815);
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 17px;
+    color: azure;
+
+}
+form p{
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    text-align: center;
+    
+}
+form p a{
+    background-color:rgba(12, 2, 63, 0.815);
+    border-radius: 3px;
+    padding: 2px;
+    color: azure;
+    text-decoration:double;
+}

@@ -2,6 +2,52 @@
 <body>
 
 <%- include('../partials/header') %> 
-    <h1>Registro</h1>
+    
+    <main>
+        
+        <section class="register">
+            <h2>¡Bienvenido a nuestro registro!</h2>
+            <aside>
+                <div class="contenedor-registro">
+                    <form action="/usuarios/login" method="POST" enctype="multipart/form-data">
+    
+                        
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Sofía">
+                    
+                    <label for="">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ej: Torres">
+                    
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="Email" placeholder="ejemplo@ejemplo.com">
+                    
+                    <label for="">DNI</label>
+                    <input type="number" name="dni" id="dni" placeholder="99999999">
+
+                    <label for="">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+
+                    <label for="">Repetir la contraseña</label>
+                    <input type="password" name="repetir-contraseña" id="repetir-contraseña" placeholder="Repetir contraseña">
+
+                    <label for="">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
+
+                    <label for="">Foto de perfil</label>
+                    <input type="file" name="avatar" id="avatar" placeholder="Imagen">
+                
+                
+                    <p class="p-register">¿Tenés cuenta? 
+                    <a href="/usuarios/login">¡Inicia sesión!</a>
+                    </p>
+                    
+                        <button type="submit">¡Registrarme!</button>
+                    </form>
+                </div>
+                
+            </aside>
+        </section>
+    </main>
+<%- include('../partials/footer') %> 
 </body>
 </html>
