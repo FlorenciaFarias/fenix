@@ -1,0 +1,22 @@
+main .banner-catalogo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.banner-catalogo img{
+    width: 80%;
+    height: 267px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 2px;
+    border-radius:2px ;
+
+}
+
+table{
+    width: 75%;
+}
+
+th, td {
+    border-style: dotted;
+  }

@@ -1,13 +1,26 @@
+.contenedor-login  .imagen-login{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.imagen-login img{
+    width: 80%;
+    height: 90px;
+    margin-bottom: 8px;
+    margin-top: -11px;
+    border: 1px solid rgb(3, 3, 86);
+
+}
+
 .contenedor-login{
     background: rgb(114,236,10);
-    background: linear-gradient(0deg, rgba(236, 10, 225, 0.295) 1%, rgba(232,135,230,0.7347981428899685) 8%, rgb(237, 237, 237) 11%);
+    background: linear-gradient(0deg, rgba(236, 10, 225, 0.295) 1%, rgba(237, 237, 237, 0.82) 11%);
     width: 80%;
-    height: auto;
-    margin-top: 4px;
+    height: 320px;
     border-radius: 6px;
     margin: auto;
     padding: 10px;
-    border: 1px solid wheat;
+    border: 1px solid rgb(14, 3, 63);
 }
 
 .contenedor-login label{

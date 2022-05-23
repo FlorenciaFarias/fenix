@@ -2,7 +2,38 @@
 <body>
 
 <%- include('../partials/header') %> 
+<main>
     <h1>catalogo</h1>
+    <section>
+        <div class="banner-catalogo">
+            <img src="/images/barber.jpg" alt="portada de barbero">
+        </div>
+    </section>
+    
+    <section class="tendencias">
+        <h2>¡Tendencias en cortes!</h2>
+    
+            <article>
+    
+                <div class="caja-precios">
+                    
+                    <table>
+                        <tr>
+                          <th>Estilo</th>
+                          <th>Precio</th> 
+                        </tr>
+                        <tr>
+                            <td>Rapado</td>
+                            <td>$94</td>
+                          </tr>
+                    </table>
+                    <a href="/servicios/agenda">Sacar turno</a>
+                </div>
+    
+            </article>
+    </section>
+</main>
+    
 <%- include('../partials/footer') %> 
 </body>
 </html>
