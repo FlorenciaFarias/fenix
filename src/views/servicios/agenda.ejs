@@ -3,6 +3,19 @@
 
 <%- include('../partials/header') %> 
     <h1>agenda</h1>
+
+    <form action="" method="post">
+        <label for="estilo">Estilo</label>
+        <select id="estilo-agenda" name="estilo">
+            <option value="Corte1">Corte</option>
+            <option value="Corte3">Corte + cejas</option>
+            <option value="Corte4"> Corte + barba</option>
+          </select>
+
+          <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23B39DDB&ctz=America%2FArgentina%2FBuenos_Aires&showCalendars=1&src=ZXUwcHZ0MGI1bmowa21wZzZoN2FmcDcybGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F6BF26" style="border:solid 1px #777" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+        
+          <input type="time">
+    </form>
     <%- include('../partials/footer') %> 
 </body>
 </html>

@@ -43,11 +43,11 @@ header nav a{
 main .banner-home{
     display: flex;
     justify-content: center;
-    margin: auto;
+    
 }
 main img{
-    width: 80%;
-    height: 267px;
+    width: 90%;
+    height: 167px;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 2px;
@@ -121,4 +121,9 @@ footer img{
 footer .redes{
     width: 20%;
     
+}
+.redes i{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    text-transform: none;
 }
