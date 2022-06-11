@@ -76,7 +76,23 @@ main img{
     border-radius:2px ;
     margin-bottom: 2px;
 
-
+}
+.caja-agendar-turno{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid wheat;
+}
+.caja-agendar-turno h2{
+    width: 60%;
+    font-size: 16px;
+    padding: 3px;
+    border-radius:2px;
+    background-color: rgba(112, 112, 112, 0.674);
+}
+.caja-calendario img{
+    width: 35%;
 }
 .tendencias img{
     width: 25%;
@@ -111,19 +127,3 @@ footer{
     flex-direction: column-reverse;
 }
 
-footer img{
-    width: 25%;
-    height: 100px;
-    padding: 2px;
-    border-radius:2px; 
-
-}
-footer .redes{
-    width: 20%;
-    
-}
-.redes i{
-    color: rgb(204, 204, 204);
-    text-decoration: none;
-    text-transform: none;
-}
