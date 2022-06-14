@@ -31,11 +31,10 @@
 /*Para el contenedor del buruger menu*/
 .cont-menu{
     width: 50%;
-    /*background: #28164d;*/
     background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(0 0 0) 53%, rgb(17, 3, 39) 125%, rgba(239,0,255,1) 93%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(0 0 0) 53%, rgb(17, 3, 39) 125%, rgba(239,0,255,1) 93%);
     opacity: 1;
-    height: 294vh;
+    height: 500px;
     transition: all 700ms ease;
     z-index: 1;
     position: absolute;
