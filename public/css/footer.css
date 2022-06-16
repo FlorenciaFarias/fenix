@@ -36,7 +36,7 @@ footer{
     align-self: center;
     margin-bottom: 1px;
 } 
-.p-footer p, a{
+.p-footer p, .a-footer{
     display: flex;
     align-self: center;
     font-size: 0.6rem;
