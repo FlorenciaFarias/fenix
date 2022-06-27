@@ -29,6 +29,18 @@
             
         }
 
+
+        /*navegación*/
+
+        .tienda-catalogo .nav-tienda-catalogo{
+            font-size: 1rem;
+            
+        
+        }
+        .tienda-catalogo  a:hover{
+            font-size: 1.1rem;
+        }
+
 }
 
 @media screen and (min-width: 1000px){

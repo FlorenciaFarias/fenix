@@ -15,7 +15,8 @@ a{
 
 main .banner-home{
     display: flex;
-    justify-content: center;   
+    justify-content: center;
+    margin-bottom: 1rem;  
     
 }
 .banner-home .img-home{
@@ -93,26 +94,28 @@ main .banner-home{
 .caja-calendario img{
     width: 35%;
 }
-
-nav .tienda-catalogo{
+.block-navegacion{
+    margin-top: 1.5rem;
+}
+section .tienda-catalogo{
+    background-color: rgb(0, 0, 0);
     display: flex;
     margin: auto;
+    border-radius: 6px;
     width: 90%;
     text-decoration: none;
     justify-content: space-between;
 }
 .tienda-catalogo .nav-tienda-catalogo{
+    padding: 5px;
     text-align: center;
-    margin-top:4px ;
-    background-color: rgba(174, 61, 174, 0.626);
-    
-    
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 2px;
     color: aliceblue;
     
 
 }
+
 /**AGENDA  SECCION 2**/
 
 
