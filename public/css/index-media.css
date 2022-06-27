@@ -13,7 +13,7 @@
         #art-oculto{
             display: block;
         }
-        .tendencias .item-tendencia .img-tendencia{
+        .tendencias .item-tendencia .img-tendencia, .img-block-calendario{
             width: 65%;
            
         }

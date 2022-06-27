@@ -41,7 +41,7 @@ main .banner-home{
 }
 
 .tendencias h2{
-    font-size: 1.2rem;
+    text-align: center;
     padding: 3px;
     border-radius:2px;
     flex: 0 0 100%;
@@ -59,7 +59,7 @@ main .banner-home{
     text-align: center;
 
 }
-.tendencias .item-tendencia .img-tendencia{
+.tendencias .item-tendencia .img-tendencia, .img-block-calendario{
     margin: auto;
     width: 75%;
     border-radius: 7px;
@@ -67,7 +67,7 @@ main .banner-home{
 }
 
 .item-p-tendencia{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .sacar-turno-home-articulo{
     display: flex;
@@ -91,11 +91,9 @@ main .banner-home{
     border-radius:2px;
     background-color: rgba(112, 112, 112, 0.795);
 }
-.caja-calendario img{
-    width: 35%;
-}
 .block-navegacion{
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 section .tienda-catalogo{
     background-color: rgb(0, 0, 0);
@@ -118,4 +116,24 @@ section .tienda-catalogo{
 
 /**AGENDA  SECCION 2**/
 
+.block-servicios-calendario{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 90%;
+    border-radius: 7px;
+    box-shadow: 20px 10px 50px rgb(121, 121, 121);
+}
 
+.block-servicios-calendario .etiqueta-a-calendario{
+    width: 90%;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    background: black;
+    margin-bottom: 4px;
+    
+}
