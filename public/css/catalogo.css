@@ -1,6 +1,8 @@
 .catalogo-banner{
     display: flex;
     justify-content: center;
+    width: 90%;
+    height: 170px;
     
 }
 .catalogo-banner .catalogo-img{
@@ -9,7 +11,4 @@
 
 }
 
-.tendencias{
-width: 80%;
-}
 

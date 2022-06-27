@@ -3,40 +3,43 @@
 <%- include('../partials/header') %> 
 <main>
     <section>
-        <div class="banner-home">
+        <figure class="banner-home">
             <img class="img-home" src="images/banner.jpg" alt="portada de barbero">
-        </div>
+        </figure>
     </section>
 
 <section class="tendencias">
     <h2>¡Tendencias en cortes!</h2>
 
-        <article>
-
-            <div class="caja-tendencia">
-                <img src="images/corte.jpg" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <article class="item-tendencia">
+                <img class="img-tendencia" src="images/corte.jpg" alt="">
+                <h4>Corte</h4>
+                <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
                 <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
-            </div>
 
         </article>
-
-        <article>
-
-            <div class="caja-tendencia">
-                <img src="images/corte.jpg" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
-            </div>
-
+        <article class="item-tendencia">
+            <img class="img-tendencia" src="images/corte.jpg" alt="">
+            <h4>Corte</h4>
+            <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
+            <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
         </article>
+        <article class="item-tendencia" id="art-oculto">
+            <img class="img-tendencia" src="images/corte.jpg" alt="">
+            <h4>Corte</h4>
+            <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
+            <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
 
-        <nav class="tienda-catalogo" >
-            <a href="servicios/agendar">Ver productos en Tienda</a>
-            <a href="servicios/catalogo">Ver todo el catálogo</a>
-        </nav>
+    </article>
 </section>
-
+<!-- barra de navegación-->
+    <section class="block-navegacion">
+        <nav class="tienda-catalogo" >
+            <a class="nav-tienda-catalogo" href="servicios/agendar">Ver productos en Tienda</a>
+            <a class="nav-tienda-catalogo" href="servicios/catalogo">Ver todo el catálogo</a>
+        </nav>
+    </section>
+<!--   caja agendar turno -->
 <section class="caja-calendario">
     <h2>¡Agendá tu turno!</h2>
     <div class="caja-agendar-turno">
@@ -51,24 +54,25 @@
     </div>
 </section>
 
-<section class="tendencias">
+<!--<section class="tendencias">
     <h2>¡Sobre mí!</h2>
         <article>
             <div class="caja-tendencia">
-                <img src="images/mi.jpg" alt="">
+                <img class="img-tendencia" src="images/mi.jpg" alt="">
                 <a href="/servicios/agenda">Sacar turno</a>
             </div>
             <div class="caja-tendencia">
-                <img src="images/calendario.jpg" alt="">
+                <img class="img-tendencia" src="images/calendario.jpg" alt="">
                 <a href="/servicios/agenda">Sacar turno</a>
             </div>
         </article>
 
 </section>
+-->
 <section>
-    <div class="banner-home">
+    <figure class="banner-home">
         <img class="img-home" src="images/banner.jpg" alt="portada de barbero">
-    </div>
+    </figure>
 </section>
 </main>
 <%- include('../partials/footer') %> 

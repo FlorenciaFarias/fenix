@@ -1,0 +1,15 @@
+[{
+    "id": "1",
+    "corte": "Corte",
+    "descripcion_breve": "Corte con máquina y/o tijeras",
+    "precio": "$600",
+    "img": "/images/corte.jpg"
+},
+{
+    "id": "2",
+    "corte": "Corte + Barba",
+    "descripcion_breve": "Corte con máquina + navaja + tijeras",
+    "precio": "$700",
+    "img": "/images/corte.jpg"
+}
+]

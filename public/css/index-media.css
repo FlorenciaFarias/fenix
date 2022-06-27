@@ -1,0 +1,52 @@
+@media screen and (min-width: 700px) {
+    .tendencias{
+        flex-direction: row;
+    }
+    .tendencias .item-tendencia{
+        flex: 0 0 calc(75% - 12px);
+      
+        }
+        .tendencias .item-tendencia:hover{
+            box-shadow: 10px 20px 50px gray;
+            border: none;
+        }
+        #art-oculto{
+            display: block;
+        }
+        .tendencias .item-tendencia .img-tendencia{
+            width: 65%;
+           
+        }
+        .sacar-turno-home-articulo{
+           
+            width: 40%;
+            border-radius: 7px;
+        }
+        .tendencias a:hover{
+            background: rgb(255, 255, 255);
+            color: rgb(16, 14, 14);
+            border: black solid 1px;
+            
+        }
+
+}
+
+@media screen and (min-width: 1000px){
+    .tendencias{
+        justify-content: space-around;
+    }
+    .tendencias .item-tendencia{
+        flex: 0 0 25%;
+        
+      
+     }
+    #art-oculto{
+        display: block;
+    }
+    .sacar-turno-home-articulo{
+           
+        width: 50%;
+        border-radius: 7px;
+    }
+   
+}

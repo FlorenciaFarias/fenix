@@ -5,114 +5,20 @@
     font-family: 'Rubik', sans-serif;
     
 }
-#btn-menu{
-    display: none;
-}
-.btn-menu{
-    position: absolute;
-    font-size: 1.9rem;
-    left: 10px;
-    top:10px;
-    margin-top: 6px;
-    color:#f9f9f9;
-   
-    
-}
-.btn-menu:hover{
-    color:#FFF;
-    
-}
 
-
-#btn-menu:checked ~ .cont-menu{
-    opacity: 1;
-    visibility: visible;
-}
-/*Para el contenedor del buruger menu*/
-.cont-menu{
-    width: 50%;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(0 0 0) 53%, rgb(17, 3, 39) 125%, rgba(239,0,255,1) 93%);
-    opacity: 1;
-    height: 500px;
-    transition: all 700ms ease;
-    z-index: 1;
-    position: absolute;
-    bottom: 0%;
-    top: 0px;
-    padding: 3px;
-    opacity: 0;
-    visibility: hidden;
-    
-}
-
-
-/*Para las fuentes*/
-.cont-menu nav a{
-    display: block;
-    text-decoration: none;
-    margin-top: 14px;
-    padding: 5px;
-    color: #e7dddd;
-	transition: all 700ms ease;
-    
-}
-.cont-menu nav a:hover{
-    
-    background: #1f1f1f;
-    box-shadow: #0fceeb;
-}
-.cont-menu label{
-    position: absolute;
-    right: 5px;
-    top:10px;
-    
-	color: rgb(112, 255, 253);
-    cursor: pointer;
-    font-size: 2rem;
-    background: transparent;
-    text-decoration: none;
-    
-}
-/*Fin de Burger-btn*/
-
-
-
-
-
-body{
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 7%, rgba(0,0,0,1) 8%, rgba(201,223,226,1) 49%);
-}
 a{
     text-decoration: none;
+    color: white;
 }
-header{
-    display: flex;
-    width: 100%;
-    height: 120px;
-    border-bottom: 2px solid rgb(181, 70, 150);
-    background: rgb(0, 0, 0);
-}
-.contenedor-img{
-    width: 40%;
-    height: 120px;
-    margin-left: 100px;
-}
-header img{
-    width: 130px;
-    
-}
-
 
 /*main*/
 
 main .banner-home{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
     
 }
-main img{
+.banner-home .img-home{
     width: 90%;
     height: 167px;
     margin-top: 4px;
@@ -123,64 +29,88 @@ main img{
 }
 
 /**TENDENCIAS  SECCION 1**/
+.tendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    border-radius: 7px;
+    box-shadow: 20px 10px 50px rgb(121, 121, 121);
+}
+
 .tendencias h2{
-    width: 60%;
-    font-size: 16px;
+    font-size: 1.2rem;
     padding: 3px;
     border-radius:2px;
-    background-color: rgba(255, 255, 255, 0.674);
+    flex: 0 0 100%;
+    
 }
-.tendencias{
-    width: 80%;
-    margin: auto;
 
-}
-.tendencias .caja-tendencia{
+.tendencias .item-tendencia{
     display: flex;
     flex-direction: column;
-    background-color: rgba(25, 24, 24, 0.648);
     padding: 5px;
-    border: 1px solid black;
-    display: none;
+    border: 1px solid rgba(174, 61, 174, 0.626);
+    border-radius: 7px;
+    flex: 0 0 90%;
+    margin-bottom: 2px;
+    text-align: center;
 
+}
+.tendencias .item-tendencia .img-tendencia{
+    margin: auto;
+    width: 75%;
+    border-radius: 7px;
+   
+}
+
+.item-p-tendencia{
+    margin-bottom: 5px;
 }
 .sacar-turno-home-articulo{
     display: flex;
     margin: auto;
     text-decoration: none;
     justify-content: center;
-    width: 80%;
-    border: 1px solid wheat;
-    
+    width: 50%;
+    background: black;
+    border: 1px solid rgba(174, 61, 174, 0.626);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+#art-oculto{
+    display: none;
 }
 .caja-agendar-turno h2{
     width: 60%;
     font-size: 16px;
     padding: 3px;
     border-radius:2px;
-    background-color: rgba(112, 112, 112, 0.674);
+    background-color: rgba(112, 112, 112, 0.795);
 }
 .caja-calendario img{
     width: 35%;
 }
-.tendencias img{
-    width: 25%;
-    height: 120px;
-}
-.tendencias nav{
-    width: 100%;
-    margin-top:4px ;
-    text-decoration: none;
-}
-.tienda-catalogo{
-    background-color: rgba(174, 61, 174, 0.626);
+
+nav .tienda-catalogo{
     display: flex;
+    margin: auto;
+    width: 90%;
+    text-decoration: none;
     justify-content: space-between;
+}
+.tienda-catalogo .nav-tienda-catalogo{
     text-align: center;
+    margin-top:4px ;
+    background-color: rgba(174, 61, 174, 0.626);
+    
+    
     font-size: 13px;
     border-radius: 2px;
     color: aliceblue;
-    text-decoration: none;
+    
 
 }
 /**AGENDA  SECCION 2**/
