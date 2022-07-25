@@ -3,6 +3,7 @@
     "corte": "Corte",
     "descripcion_breve": "Corte con máquina y/o tijeras",
     "precio": "$600",
+    "seccion": "ofertas",
     "img": "/images/corte.jpg"
 },
 {
@@ -10,6 +11,7 @@
     "corte": "Corte + Barba",
     "descripcion_breve": "Corte con máquina + navaja + tijeras",
     "precio": "$700",
+    "seccion": "destacados",
     "img": "/images/corte.jpg"
 }
 ]

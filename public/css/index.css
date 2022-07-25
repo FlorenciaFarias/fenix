@@ -126,13 +126,14 @@ section .tienda-catalogo{
     border-radius: 7px;
     box-shadow: 20px 10px 50px rgb(121, 121, 121);
 }
-
+article #nav-servicios-a{
+    display: flex;
+    border: 1px solid gray;
+}
 .block-servicios-calendario .etiqueta-a-calendario{
-    width: 90%;
     color: rgb(253, 253, 253);
     text-align: center;
     font-size: 1rem;
-    display: inline-block;
     background: black;
     margin-bottom: 4px;
     
