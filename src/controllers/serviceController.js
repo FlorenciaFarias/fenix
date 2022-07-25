@@ -1,12 +1,14 @@
 const serviceController = {
     agenda: (req,res) => {
         res.render('servicios/agenda',{
-            titulo: 'Agendar turno'
+            titulo: 'Agendar turno',
+            estilos: ['agenda', 'header', 'footer']
         });
     },
     catalogo: (req,res) => {
         res.render('servicios/catalogo',{
-            titulo: 'Catálogo con precios'
+            titulo: 'Catálogo con precios',
+            estilos: ['catalogo', 'header', 'footer']
         });
     }
 }

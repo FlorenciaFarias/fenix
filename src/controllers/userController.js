@@ -1,12 +1,14 @@
 const userController = {
     login: (req,res) => {
         res.render('usuarios/login',{
-            titulo: 'Iniciar sesión'
+            titulo: 'Iniciar sesión',
+            estilos: ['login', 'header', 'footer']
         });
     },
     register: (req,res) => {
         res.render('usuarios/register',{
-            titulo: 'Registrarme'
+            titulo: 'Registrarme',
+            estilos: ['register', 'header', 'footer']
         });
     }
 }
