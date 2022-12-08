@@ -13,6 +13,7 @@ const userController = {
         });
     },
     dataRegister: (req, res) => {
+        req.body.avatar = req.files[0].filename;
         let nuevoUsuario = create(req.body);
         let usuarios = all();
         usuarios.push(nuevoUsuario);

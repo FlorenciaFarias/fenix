@@ -15,5 +15,39 @@
     "repetir_password": "123456",
     "avatar": "",
     "rol": false
+  },
+  {
+    "id": 2,
+    "nombre": "",
+    "apellido": "",
+    "email": "",
+    "tel": "",
+    "dni": "",
+    "calle": "",
+    "altura": "",
+    "localidad": "",
+    "provincia": "",
+    "cp": "",
+    "password": "",
+    "repetir_password": "",
+    "avatar": "avatar-1670516225499.png",
+    "rol": false
+  },
+  {
+    "id": 3,
+    "nombre": "Flor",
+    "apellido": "Farías",
+    "email": "florencia.fariasmm@gmail.com",
+    "tel": "1122332211",
+    "dni": "123456",
+    "calle": "asd",
+    "altura": "123",
+    "localidad": "aass",
+    "provincia": "ass",
+    "cp": "1111",
+    "password": "12345",
+    "repetir_password": "12345",
+    "avatar": "avatar-1670516284311.jpg",
+    "rol": false
   }
 ]
