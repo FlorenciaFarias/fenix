@@ -12,7 +12,10 @@ a{
 }
 
 /*main*/
-
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.jpg');
+    background-size: 100%;
+}
 main .banner-home{
     display: flex;
     justify-content: center;
@@ -21,7 +24,7 @@ main .banner-home{
 }
 .banner-home .img-home{
     width: 90%;
-    height: 167px;
+    height: 250px;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 2px;
@@ -36,6 +39,9 @@ main .banner-home{
     justify-content: center;
     margin: auto;
     width: 90%;
+    height: auto;
+    background: rgba(218, 218, 218, 0.095);
+    border-color: black;
     border-radius: 7px;
     box-shadow: 20px 10px 50px rgb(121, 121, 121);
 }
@@ -45,10 +51,12 @@ main .banner-home{
     padding: 3px;
     border-radius:2px;
     flex: 0 0 100%;
+    color: white;
     
 }
 
 .tendencias .item-tendencia{
+    background: rgba(255, 255, 255, 0.789);
     display: flex;
     flex-direction: column;
     padding: 5px;
