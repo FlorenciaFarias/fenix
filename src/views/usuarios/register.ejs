@@ -9,7 +9,7 @@
             <h2>¡Bienvenido a nuestro registro!</h2>
             <aside>
                 <div class="contenedor-registro">
-                    <form action="/usuarios/login" method="POST" enctype="multipart/form-data">
+                    <form action="/usuarios/register" method="POST">
     
                         
                     <label for="">Nombre</label>
@@ -18,17 +18,37 @@
                     <label for="">Apellido</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Ej: Torres">
                     
-                    <label for="">E-mail</label>
-                    <input type="email" name="email" id="Email" placeholder="ejemplo@ejemplo.com">
                     
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+                    
+                    <label for="">Teléfono celular</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Ej: 1123456789">
+
+
                     <label for="">DNI</label>
                     <input type="number" name="dni" id="dni" placeholder="99999999">
 
+                    <label for="">Calle</label>
+                    <input type="text" name="calle" id="calle" placeholder="Calle Falsa">
+
+                    <label for="">Altura</label>
+                    <input type="number" name="altura" id="altura" placeholder="123">
+
+                    <label for="">Localidad</label>
+                    <input type="text" name="localidad" id="localidad" placeholder="Florencio Varela">
+
+                    <label for="">Provincia</label>
+                    <input type="text" name="provincia" id="provincia" placeholder="Buenos Aires">
+
+                    <label for="">Código postal</label>
+                    <input type="text" name="cp" id="cp" placeholder="1888">
+
                     <label for="">Contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="*********">
 
                     <label for="">Repetir la contraseña</label>
-                    <input type="password" name="repetir-contraseña" id="repetir-contraseña" placeholder="Repetir contraseña">
+                    <input type="password" name="repetir_password" id="repetir_password" placeholder="*********">
 
                     <label for="">Fecha de nacimiento</label>
                     <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">

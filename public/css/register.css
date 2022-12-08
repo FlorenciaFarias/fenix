@@ -9,7 +9,7 @@ section .register h2{
     background: rgb(114,236,10);
     background: linear-gradient(0deg, rgba(236, 10, 225, 0.295) 1%, rgba(232,135,230,0.7347981428899685) 8%, rgb(237, 237, 237) 11%);
     width: 75%;
-    height: 450px;
+    height: auto;
     margin-top: 4px;
     border-radius: 6px;
     margin: auto;

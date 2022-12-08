@@ -1,0 +1,19 @@
+<%- include('../partials/head') %>
+<body>
+
+<%- include('../partials/header') %> 
+    <h1>Agregar un servicio</h1>
+
+    <form action="/servicios/crearServicio" method="post">
+        <label for="estilo">Estilo</label>
+        <select id="estilo-agenda" name="estilo">
+            <option value="Corte1">Corte</option>
+            <option value="Corte3">Corte + cejas</option>
+            <option value="Corte4"> Corte + barba</option>
+          </select>
+        
+          <input type="time">
+    </form>
+    <%- include('../partials/footer') %> 
+</body>
+</html>

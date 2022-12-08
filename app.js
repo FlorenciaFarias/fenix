@@ -4,7 +4,7 @@ const path = require('path');
 const method = require('method-override');
 const port = 3000;
 
-app.listen(port, () => console.log(`Servidor funcionando http://localhost:3000 ${port}!`));
+app.listen(port, () => console.log(`Servidor funcionando http://localhost:3000`));
 
 const mainRoutes = require('./src/routes/mainRouter');
 const userRoutes = require('./src/routes/userRouter');
