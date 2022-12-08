@@ -13,8 +13,14 @@
     
                         
                     <label for="">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Sofía">
-                    
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Sofía"
+                    value="<%= locals.oldData ? oldData.nombre : null %>">
+                    <% if (locals.errors && errors.nombre) { %>
+                     <p class="msg-error"> 
+                        <%= errors.nombre.msg %> 
+                     </p>
+                    <% } %>
+
                     <label for="">Apellido</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Ej: Torres">
                     
