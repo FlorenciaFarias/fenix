@@ -64,7 +64,7 @@ const register = [
         .withMessage('Debe escribir una contraseña')
         .bail()
         .isLength({ min: 8 })
-        .withMessage("La contraseña debe contener mínimo 8 caracteres.")
+        .withMessage('La contraseña debe contener mínimo 8 caracteres')
         .bail()
         .isStrongPassword({
             minLowercase: 1,
@@ -76,13 +76,12 @@ const register = [
         .withMessage(
         'La contraseña debe contener al menos UNA letra mayuscula, UNA letra minuscula, UN número y UN caracter especial')
         .bail(),
-
-  body("repetir_password")
+    body('repetir_password')
         .notEmpty()
-        .withMessage("Este campo es obligatorio.")
+        .withMessage('Debe escribir una contraseña')
         .bail()
         .isLength({ min: 8 })
-        .withMessage("La contraseña debe contener mínimo 8 caracteres.")
+        .withMessage('La contraseña debe contener mínimo 8 caracteres')
         .bail()
         .custom(( value, { req } ) => {
             if (value !== req.body.password) {
