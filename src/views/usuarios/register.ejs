@@ -13,7 +13,11 @@
     
                         
                     <label for="">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Sofía"
+                    <input 
+                    type="text" 
+                    name="nombre" 
+                    id="nombre" 
+                    placeholder="Ej: Sofía"
                     value="<%= locals.oldData ? oldData.nombre : null %>">
                     <% if (locals.errors && errors.nombre) { %>
                      <p class="msg-error"> 
@@ -21,48 +25,187 @@
                      </p>
                     <% } %>
 
+
                     <label for="">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ej: Torres">
+                    <input 
+                    type="text" 
+                    name="apellido" 
+                    id="apellido" 
+                    placeholder="Ej: Torres"
+                    value="<%= locals.oldData ? oldData.apellido : null %>">
+                    <% if (locals.errors && errors.apellido) { %>
+                     <p class="msg-error"> 
+                        <%= errors.apellido.msg %> 
+                     </p>
+                    <% } %>
                     
-                    
+
                     <label for="">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
-                    
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="ejemplo@ejemplo.com"
+                    value="<%= locals.oldData ? oldData.email : null %>">
+                    <% if (locals.errors && errors.email) { %>
+                     <p class="msg-error"> 
+                        <%= errors.email.msg %> 
+                     </p>
+                    <% } %>
+
+
                     <label for="">Teléfono celular</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Ej: 1123456789">
+                    <input 
+                    type="tel" 
+                    name="tel" 
+                    id="tel" 
+                    placeholder="Ej: +5491123456789"
+                    value="<%= locals.oldData ? oldData.tel : null %>">
+                    <% if (locals.errors && errors.tel) { %>
+                     <p class="msg-error"> 
+                        <%= errors.tel.msg %> 
+                     </p>
+                    <% } %>
 
 
                     <label for="">DNI</label>
-                    <input type="number" name="dni" id="dni" placeholder="99999999">
+                    <input 
+                    type="number" 
+                    name="dni" 
+                    id="dni" 
+                    placeholder="99999999"
+                    value="<%= locals.oldData ? oldData.dni : null %>">
+                    <% if (locals.errors && errors.dni) { %>
+                     <p class="msg-error"> 
+                        <%= errors.dni.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Calle</label>
-                    <input type="text" name="calle" id="calle" placeholder="Calle Falsa">
+                    <input 
+                    type="text" 
+                    name="calle" 
+                    id="calle" 
+                    placeholder="Calle Falsa"
+                    value="<%= locals.oldData ? oldData.calle : null %>">
+                    <% if (locals.errors && errors.calle) { %>
+                     <p class="msg-error"> 
+                        <%= errors.calle.msg %> 
+                     </p>
+                    <% } %>
 
+                    
                     <label for="">Altura</label>
-                    <input type="number" name="altura" id="altura" placeholder="123">
+                    <input 
+                    type="number" 
+                    name="altura" 
+                    id="altura" 
+                    placeholder="123"
+                    value="<%= locals.oldData ? oldData.altura : null %>">
+                    <% if (locals.errors && errors.altura) { %>
+                     <p class="msg-error"> 
+                        <%= errors.altura.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Localidad</label>
-                    <input type="text" name="localidad" id="localidad" placeholder="Florencio Varela">
+                    <input 
+                    type="text" 
+                    name="localidad" 
+                    id="localidad" 
+                    placeholder="Florencio Varela"
+                    value="<%= locals.oldData ? oldData.localidad : null %>">
+                    <% if (locals.errors && errors.localidad) { %>
+                     <p class="msg-error"> 
+                        <%= errors.localidad.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Provincia</label>
-                    <input type="text" name="provincia" id="provincia" placeholder="Buenos Aires">
+                    <input 
+                    type="text" 
+                    name="provincia" 
+                    id="provincia" 
+                    placeholder="Buenos Aires"
+                    value="<%= locals.oldData ? oldData.provincia : null %>">
+                    <% if (locals.errors && errors.provincia) { %>
+                     <p class="msg-error"> 
+                        <%= errors.provincia.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Código postal</label>
-                    <input type="text" name="cp" id="cp" placeholder="1888">
-
+                    <input 
+                    type="text" 
+                    name="cp" 
+                    id="cp" 
+                    placeholder="1888"
+                    value="<%= locals.oldData ? oldData.cp : null %>">
+                    <% if (locals.errors && errors.cp) { %>
+                     <p class="msg-error"> 
+                        <%= errors.cp.msg %> 
+                     </p>
+                    <% } %>
                     <label for="">Contraseña</label>
-                    <input type="password" name="password" id="password" placeholder="*********">
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="*********"
+                    value="<%= locals.oldData ? oldData.password : null %>">
+                    <% if (locals.errors && errors.password) { %>
+                     <p class="msg-error"> 
+                        <%= errors.password.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Repetir la contraseña</label>
-                    <input type="password" name="repetir_password" id="repetir_password" placeholder="*********">
+                    <input 
+                    type="password" 
+                    name="repetir_password" 
+                    id="repetir_password" 
+                    placeholder="*********"
+                    value="<%= locals.oldData ? oldData.repetir_password : null %>">
+                    <% if (locals.errors && errors.repetir_password) { %>
+                     <p class="msg-error"> 
+                        <%= errors.repetir_password.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Fecha de nacimiento</label>
-                    <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
+                    <input 
+                    type="date" 
+                    name="fecha" 
+                    id="fecha" 
+                    placeholder="Fecha de nacimiento"
+                    value="<%= locals.oldData ? oldData.fecha : null %>">
+                    <% if (locals.errors && errors.fecha) { %>
+                     <p class="msg-error"> 
+                        <%= errors.fecha.msg %> 
+                     </p>
+                    <% } %>
+
 
                     <label for="">Foto de perfil</label>
-                    <input type="file" name="avatar" id="avatar" placeholder="Imagen">
-                
+                    <input 
+                    type="file" 
+                    name="avatar" 
+                    id="avatar" 
+                    placeholder="Imagen"
+                    value="<%= locals.oldData ? oldData.avatar : null %>">
+                    <% if (locals.errors && errors.avatar) { %>
+                     <p class="msg-error"> 
+                        <%= errors.avatar.msg %> 
+                     </p>
+                    <% } %>
                         
+
                             <p class="p-register">¿Tenés cuenta? 
                             <a href="/usuarios/login">¡Inicia sesión!</a>
                             </p>
