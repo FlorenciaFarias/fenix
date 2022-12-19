@@ -1,5 +1,8 @@
 const { body } = require('express-validator');
-//const { all } = require('../models/usuarios');
+const { unlinkSync } = require('fs');
+const { extname, resolve } = require('path');
+
+const { all } = require('../models/usuario');
 
 const register = [
 
@@ -20,7 +23,14 @@ const register = [
         .bail()
         .isEmail()
         .withMessage('Formato de E-mail inválido')
-        .bail(),
+        .bail()
+        .custom( ( value ) => {
+            let usuarios = all();
+            usuarios = usuarios.map( usuario  => usuario.email);
+                if(usuarios.includes(value)){
+                    throw new Error('Ya existe un usuario registrado con este email, intente con otro');
+                }
+        }),
     body('tel')
         .optional()
         .bail()
@@ -89,6 +99,28 @@ const register = [
             }
             return true;
         }).bail(),
+    body('fecha')
+        .notEmpty()
+        .withMessage('Debe seleccionar su fecha de nacimiento')
+        .bail()
+        .isDate()
+        .withMessage('Ingrese una fecha válida')
+        .bail(),
+    body('avatar')
+        .custom( ( value, { req } ) => {
+            if(req.files && req.files[0]){
+                let archivo = req.files;
+                let extensionesValidas = ['.png', '.jpg', '.jpeg', '.svg', '.PNG', '.JPG', '.JPEG', '.SVG'];
+                let foto = archivo[0];
+                let extension = extname(foto.filename);
+
+                if(!extensionesValidas.includes(extension)){
+                    unlinkSync( resolve(__dirname, '../uploads', 'usuarios', foto.filename));
+
+                    throw new Error('Solo se admiten imagenes: png, jpg, jpeg y svg');
+                };
+            }
+        })
 ]
 
 module.exports = register;
