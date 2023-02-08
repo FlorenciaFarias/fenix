@@ -8,6 +8,21 @@ const userController = {
             titulo: 'Iniciar sesión'
         });
     },
+    loginProcess: (req, res) => {
+        let validaciones = validationResult(req);
+        let { errors } = validaciones;
+        if(errors && errors.length > 0){
+            return res.render('usuarios/login', {
+                titulo: 'Iniciar sesión',
+                oldData: req.body,
+                errors: validaciones.mapped()
+            });
+        };
+        let usuariosRegistrados = all();
+        let usuario = usuariosRegistrados.find(u => u.email === req.body.email);
+        return res.redirect('main/index');
+
+    },
     register: (req,res) => {
         res.render('usuarios/register',{
             titulo: 'Registrarme'
