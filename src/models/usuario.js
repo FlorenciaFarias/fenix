@@ -1,6 +1,6 @@
-const { readFileSync, writeFileSync} = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
-
+const { hashSync } = require('bcryptjs');
 const model = {
     all: () => {
 
@@ -36,7 +36,7 @@ const model = {
             localidad: data.localidad,
             provincia: data.provincia,
             cp: data.cp,
-            password: data.password,
+            password: hashSync(data.password, 10),
             repetir_password: data.repetir_password,
             avatar: data.avatar,
             rol: data.email.includes('@fenix.com')
