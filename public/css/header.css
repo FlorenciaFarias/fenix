@@ -24,10 +24,10 @@
 /*Para el contenedor del buruger menu*/
 .cont-menu{
     width: 50%;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(0 0 0) 53%, rgb(17, 3, 39) 125%, rgba(239,0,255,1) 93%);
+    background: rgb(8, 8, 12);
+    background: linear-gradient(0deg, rgb(79, 4, 74) 0%, rgb(4, 29, 1) 53%, rgb(17, 3, 39) 125%, rgba(239,0,255,1) 93%);
     opacity: 1;
-    height: 500px;
+    height: 480px;
     transition: all 700ms ease;
     z-index: 1;
     position: absolute;
@@ -57,7 +57,7 @@
     right: 5px;
     top:10px;
     
-	color: rgb(112, 255, 253);
+	color: rgb(169, 8, 174);
     cursor: pointer;
     font-size: 2rem;
     background: transparent;
@@ -81,7 +81,7 @@ header{
 }
 header img{
     width: 130px;
-    
+    margin-left: 180px;
     
 }
 .nav-login i{
