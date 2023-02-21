@@ -1,20 +1,46 @@
 @media screen and (min-width: 700px) {
+
+    .burger-menu{
+        display: none;
+    }
+
+   div nav a{
+        color: white;
+    }
     .tendencias{
         flex-direction: row;
     }
+    .tendencias h2{
+        margin-bottom: 8px;
+    }
+    .item-tendencia h4{
+        color: white;
+        font-size: 17px;
+    }
+    .item-tendencia h5{
+        font-weight: bold;
+        font-size: 20px;
+        color: greenyellow;
+    }.item-tendencia .item-p-tendencia{
+        color: white;
+    }
     .tendencias .item-tendencia{
         flex: 0 0 calc(75% - 12px);
+        margin-top: 10px;
+        padding: 5px;
       
         }
         .tendencias .item-tendencia:hover{
-            box-shadow: 10px 20px 50px gray;
-            border: none;
+            box-shadow: 10px 20px 40px rgba(128, 128, 128, 0.759);
+            border: 2px solid rgba(14, 0, 144, 0.626);
+            
         }
         #art-oculto{
             display: block;
         }
-        .tendencias .item-tendencia .img-tendencia, .img-block-calendario{
-            width: 65%;
+        .tendencias .img-tendencia{
+            width: 45%;
+            height: 100px;
            
         }
         .sacar-turno-home-articulo{
@@ -23,9 +49,9 @@
             border-radius: 7px;
         }
         .tendencias a:hover{
-            background: rgb(255, 255, 255);
-            color: rgb(16, 14, 14);
-            border: black solid 1px;
+            background: rgb(12, 12, 12);
+            color: rgb(255, 255, 255);
+            border: rgb(255, 255, 255) solid 1px;
             
         }
 
