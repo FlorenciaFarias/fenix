@@ -11,8 +11,11 @@
                 <div class="contenedor-registro">
                     <form action="/usuarios/register" method="POST" enctype="multipart/form-data">
     
-                        
+                       <section id="fila1">
                     <label for="">Nombre</label>
+                    <span>
+                    <i class="fa-solid fa-user-robot" id="form-i"></i>
+                  </span>
                     <input 
                     type="text" 
                     name="nombre" 
@@ -38,8 +41,9 @@
                         <%= errors.apellido.msg %> 
                      </p>
                     <% } %>
-                    
+                  </section>
 
+                     <section id="fila2">
                     <label for="">E-mail</label>
                     <input 
                     type="email" 
@@ -66,8 +70,9 @@
                         <%= errors.tel.msg %> 
                      </p>
                     <% } %>
+                  </section>
 
-
+                    <section id="fila3">
                     <label for="">DNI</label>
                     <input 
                     type="number" 
@@ -94,8 +99,9 @@
                         <%= errors.calle.msg %> 
                      </p>
                     <% } %>
+                  </section>
 
-                    
+                    <section id="fila4">
                     <label for="">Altura</label>
                     <input 
                     type="number" 
@@ -109,7 +115,8 @@
                      </p>
                     <% } %>
 
-
+                  
+                  
                     <label for="">Localidad</label>
                     <input 
                     type="text" 
@@ -122,8 +129,9 @@
                         <%= errors.localidad.msg %> 
                      </p>
                     <% } %>
+                  </section>
 
-
+                    <section id="fila5">
                     <label for="">Provincia</label>
                     <input 
                     type="text" 
@@ -150,6 +158,9 @@
                         <%= errors.cp.msg %> 
                      </p>
                     <% } %>
+                  </section>
+
+                    <section id="fila6">
                     <label for="">Contraseña</label>
                     <input 
                     type="password" 
@@ -176,35 +187,38 @@
                         <%= errors.repetir_password.msg %> 
                      </p>
                     <% } %>
+                  </section>
 
+                    <section id="fila7">
+                     <label for="">Fecha de nacimiento</label>
+                     <input 
+                     type="date" 
+                     name="fecha" 
+                     id="fecha" 
+                     placeholder="Fecha de nacimiento"
+                     value="<%= locals.oldData ? oldData.fecha : null %>">
+                     <% if (locals.errors && errors.fecha) { %>
+                      <p class="msg-error"> 
+                         <%= errors.fecha.msg %> 
+                      </p>
+                     <% } %>
+                    
+                     <label for="">Foto de perfil</label>
+                     <input 
+                     type="file" 
+                     name="avatar" 
+                     id="avatar" 
+                     placeholder="Imagen"
+                     value="<%= locals.oldData ? oldData.avatar : null %>">
+                     <% if (locals.errors && errors.avatar) { %>
+                      <p class="msg-error"> 
+                         <%= errors.avatar.msg %> 
+                      </p>
+                     <% } %>
+                   
+                  </section>
 
-                    <label for="">Fecha de nacimiento</label>
-                    <input 
-                    type="date" 
-                    name="fecha" 
-                    id="fecha" 
-                    placeholder="Fecha de nacimiento"
-                    value="<%= locals.oldData ? oldData.fecha : null %>">
-                    <% if (locals.errors && errors.fecha) { %>
-                     <p class="msg-error"> 
-                        <%= errors.fecha.msg %> 
-                     </p>
-                    <% } %>
-
-
-                    <label for="">Foto de perfil</label>
-                    <input 
-                    type="file" 
-                    name="avatar" 
-                    id="avatar" 
-                    placeholder="Imagen"
-                    value="<%= locals.oldData ? oldData.avatar : null %>">
-                    <% if (locals.errors && errors.avatar) { %>
-                     <p class="msg-error"> 
-                        <%= errors.avatar.msg %> 
-                     </p>
-                    <% } %>
-                        
+                     
 
                             <p class="p-register">¿Tenés cuenta? 
                             <a href="/usuarios/login">¡Inicia sesión!</a>
