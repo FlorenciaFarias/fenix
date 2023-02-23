@@ -8,8 +8,11 @@ footer{
 
 .contenedor-footer{
     display: flex;
-    justify-content:space-between;  
-    width: 100%;
+    justify-content:space-around;  
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 150px;
+
     
 }
 
@@ -22,11 +25,13 @@ footer{
     flex-direction: column;
     padding: 5px;
     border-radius:5% 6% ;
+    justify-content: center;
 
 }
 .p-footer h4{
     display: flex;
     margin-bottom: 1px;
+    font-size: 0.8rem;
 } 
 .p-footer p, .a-footer{
     display: flex;
@@ -34,7 +39,7 @@ footer{
     color: aliceblue;
 }
 footer img{
-    width: 25%;
+    width: 23%;
 
 }
 
@@ -50,10 +55,9 @@ footer .redes{
 .redes a{
     display: flex;
     justify-content: center;
-    width: 5vw;
+    
     text-decoration: none;
-    border-radius: 55% 35%;
-    background-color: rgb(91, 37, 100);
+    
 }
 
 .redes i{
@@ -65,14 +69,37 @@ footer .redes{
 }
 .copy{
     display: flex;
-    background: rgb(91, 37, 100);
-    justify-content: space-between;
+    background: rgb(37, 85, 100);
+    justify-content: space-around;
 }
 .fondo-p{
-    border: 1px solid rgb(91, 37, 100);;
+    border: 1px solid rgb(91, 37, 100);
+    padding: 2px;
 }
 
 .copy-p{
     font-size: 0.7rem;
     color:aliceblue;
 }
+
+@media screen and (min-width: 700px){
+
+.contenedor-footer{
+   max-height: 150px;
+    
+}
+footer .redes {
+    justify-content: center;
+    width: 5px;
+}
+footer img{
+    width: 16%;
+}
+.p-footer h4{
+    font-size: 1.1rem;
+}
+.p-footer p, .a-footer{
+    font-size: 0.9rem;
+}
+}
+    

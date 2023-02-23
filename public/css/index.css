@@ -23,8 +23,8 @@ main .banner-home{
     
 }
 .banner-home .img-home{
-    width: 90%;
-    height: 250px;
+    width: 89%;
+    height: 240px;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 2px;
@@ -65,6 +65,9 @@ main .banner-home{
     text-align: center;
     
 }
+.item-tendencia h5{
+    color: greenyellow;
+}
 .tendencias article:hover{
     
     border: 2px solid rgba(174, 61, 174, 0.626);
@@ -72,7 +75,7 @@ main .banner-home{
 }
 .tendencias .item-tendencia .img-tendencia, .img-block-calendario{
     margin: auto;
-
+    width: 45%;
     border-radius: 7px;
    
 }

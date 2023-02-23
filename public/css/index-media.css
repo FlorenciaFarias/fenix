@@ -20,8 +20,9 @@
     .item-tendencia h5{
         font-weight: bold;
         font-size: 20px;
-        color: greenyellow;
-    }.item-tendencia .item-p-tendencia{
+
+    }
+    .item-tendencia .item-p-tendencia{
         color: white;
     }
     .tendencias .item-tendencia{
