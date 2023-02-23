@@ -12,6 +12,7 @@
                     <form action="/usuarios/register" method="POST" enctype="multipart/form-data">
     
                        <section id="fila1">
+                        <aside>
                     <label for="">Nombre</label>
                     <span>
                     <i class="fa-solid fa-user-robot" id="form-i"></i>
@@ -23,12 +24,11 @@
                     placeholder="Ej: Sofía"
                     value="<%= locals.oldData ? oldData.nombre : null %>">
                     <% if (locals.errors && errors.nombre) { %>
-                     <p class="msg-error"> 
-                        <%= errors.nombre.msg %> 
-                     </p>
+                     <p class="msg-error">  <%= errors.nombre.msg %> </p>
+                     
                     <% } %>
-
-
+                  </aside>
+               <aside>
                     <label for="">Apellido</label>
                     <input 
                     type="text" 
@@ -37,13 +37,13 @@
                     placeholder="Ej: Torres"
                     value="<%= locals.oldData ? oldData.apellido : null %>">
                     <% if (locals.errors && errors.apellido) { %>
-                     <p class="msg-error"> 
-                        <%= errors.apellido.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.apellido.msg %> </p>
                     <% } %>
+                  </aside>
                   </section>
 
                      <section id="fila2">
+                     <aside>
                     <label for="">E-mail</label>
                     <input 
                     type="email" 
@@ -52,12 +52,11 @@
                     placeholder="ejemplo@ejemplo.com"
                     value="<%= locals.oldData ? oldData.email : null %>">
                     <% if (locals.errors && errors.email) { %>
-                     <p class="msg-error"> 
-                        <%= errors.email.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.email.msg %> </p>
                     <% } %>
 
-
+                  </aside>
+               <aside>
                     <label for="">Teléfono celular</label>
                     <input 
                     type="tel" 
@@ -66,13 +65,13 @@
                     placeholder="Ej: +5491123456789"
                     value="<%= locals.oldData ? oldData.tel : null %>">
                     <% if (locals.errors && errors.tel) { %>
-                     <p class="msg-error"> 
-                        <%= errors.tel.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.tel.msg %> </p>
                     <% } %>
+                  </aside>
                   </section>
 
                     <section id="fila3">
+                  <aside>
                     <label for="">DNI</label>
                     <input 
                     type="number" 
@@ -81,12 +80,10 @@
                     placeholder="99999999"
                     value="<%= locals.oldData ? oldData.dni : null %>">
                     <% if (locals.errors && errors.dni) { %>
-                     <p class="msg-error"> 
-                        <%= errors.dni.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.dni.msg %> </p>
                     <% } %>
-
-
+                  </aside>
+               <aside>
                     <label for="">Calle</label>
                     <input 
                     type="text" 
@@ -95,13 +92,13 @@
                     placeholder="Calle Falsa"
                     value="<%= locals.oldData ? oldData.calle : null %>">
                     <% if (locals.errors && errors.calle) { %>
-                     <p class="msg-error"> 
-                        <%= errors.calle.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.calle.msg %> </p>
                     <% } %>
+                  </aside>
                   </section>
 
                     <section id="fila4">
+                  <aside>
                     <label for="">Altura</label>
                     <input 
                     type="number" 
@@ -110,13 +107,11 @@
                     placeholder="123"
                     value="<%= locals.oldData ? oldData.altura : null %>">
                     <% if (locals.errors && errors.altura) { %>
-                     <p class="msg-error"> 
-                        <%= errors.altura.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.altura.msg %> </p>
                     <% } %>
 
-                  
-                  
+                  </aside>
+               <aside>
                     <label for="">Localidad</label>
                     <input 
                     type="text" 
@@ -125,13 +120,13 @@
                     placeholder="Florencio Varela"
                     value="<%= locals.oldData ? oldData.localidad : null %>">
                     <% if (locals.errors && errors.localidad) { %>
-                     <p class="msg-error"> 
-                        <%= errors.localidad.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.localidad.msg %> </p>
                     <% } %>
+                  </aside>
                   </section>
 
                     <section id="fila5">
+                  <aside>
                     <label for="">Provincia</label>
                     <input 
                     type="text" 
@@ -140,12 +135,11 @@
                     placeholder="Buenos Aires"
                     value="<%= locals.oldData ? oldData.provincia : null %>">
                     <% if (locals.errors && errors.provincia) { %>
-                     <p class="msg-error"> 
-                        <%= errors.provincia.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.provincia.msg %> </p>
                     <% } %>
 
-
+                  </aside>
+               <aside>
                     <label for="">Código postal</label>
                     <input 
                     type="text" 
@@ -154,13 +148,13 @@
                     placeholder="1888"
                     value="<%= locals.oldData ? oldData.cp : null %>">
                     <% if (locals.errors && errors.cp) { %>
-                     <p class="msg-error"> 
-                        <%= errors.cp.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.cp.msg %> </p>
                     <% } %>
+                  </aside>
                   </section>
 
                     <section id="fila6">
+                  
                     <label for="">Contraseña</label>
                     <input 
                     type="password" 
@@ -169,12 +163,10 @@
                     placeholder="*********"
                     value="<%= locals.oldData ? oldData.password : null %>">
                     <% if (locals.errors && errors.password) { %>
-                     <p class="msg-error"> 
-                        <%= errors.password.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.password.msg %> </p>
                     <% } %>
 
-
+                
                     <label for="">Repetir la contraseña</label>
                     <input 
                     type="password" 
@@ -183,13 +175,13 @@
                     placeholder="*********"
                     value="<%= locals.oldData ? oldData.repetir_password : null %>">
                     <% if (locals.errors && errors.repetir_password) { %>
-                     <p class="msg-error"> 
-                        <%= errors.repetir_password.msg %> 
-                     </p>
+                     <p class="msg-error"> <%= errors.repetir_password.msg %> </p>
                     <% } %>
+                  
                   </section>
 
                     <section id="fila7">
+                  
                      <label for="">Fecha de nacimiento</label>
                      <input 
                      type="date" 
@@ -198,11 +190,10 @@
                      placeholder="Fecha de nacimiento"
                      value="<%= locals.oldData ? oldData.fecha : null %>">
                      <% if (locals.errors && errors.fecha) { %>
-                      <p class="msg-error"> 
-                         <%= errors.fecha.msg %> 
-                      </p>
+                      <p class="msg-error"> <%= errors.fecha.msg %> </p>
                      <% } %>
-                    
+                
+              
                      <label for="">Foto de perfil</label>
                      <input 
                      type="file" 
@@ -211,11 +202,9 @@
                      placeholder="Imagen"
                      value="<%= locals.oldData ? oldData.avatar : null %>">
                      <% if (locals.errors && errors.avatar) { %>
-                      <p class="msg-error"> 
-                         <%= errors.avatar.msg %> 
-                      </p>
+                      <p class="msg-error"> <%= errors.avatar.msg %> </p>
                      <% } %>
-                   
+                
                   </section>
 
                      

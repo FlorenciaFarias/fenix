@@ -11,9 +11,7 @@
         <section class="login">
             <aside>
                 <div class="contenedor-login">
-                    <div class="imagen-login">
-                    <img src="/images/corte.jpg" alt="">
-                </div>
+                    <h2>¡Hola, de nuevo! :)</h2>
                     <form action="/usuarios/loginProcess" method="POST">
 
                         <label for="">Ingresá tu E-mail</label>
@@ -25,16 +23,16 @@
                         <% } %>
 
                         <label for="">Ingresá tu contraseña</label>
-                        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
+                        <input type="password" name="contraseña" id="contraseña" placeholder="*******"
                         value="<%= locals.oldData ? oldData.password : null %>">
                         <% if (locals.errors && errors.password) { %>
                          <p class="msg-error"><%= locals.password.msg %> </p>
                         <% } %>
 
-                        
+                        <div class="check">
                             <label for="">¿Recordar usuario?</label>
                             <input type="checkbox" name="recordarUsuario">
-                            
+                        </div>   
                         
                             <div class="boton-p">
 

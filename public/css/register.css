@@ -11,28 +11,28 @@ main{
 
 .contenedor-registro{
     display: flex;
-    background: rgb(5, 99, 249);
-    background: linear-gradient(0deg, rgba(219, 27, 226, 0.942) 3%, rgba(54, 2, 78, 0.937) 5%, rgba(115, 1, 144, 0.658) 18%);
-    width: 85%;
-   
+    background: rgb(62 20 87 / 46%);
+    min-width: 275px;
+    max-width: 300px;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 10px;
     margin: auto;
     padding: 6px;
     flex-flow: column wrap;
     
 }
-form{
+.contenedor-registro form{
     width: 100%;
-    height: 291px;
+    
+   
 }
 form span{
     color:rgb(165, 21, 144);
     max-width: 420px;
-  position: relative;
+    position: relative;
 }
 form span #form-i {
-    position: absolute;
+  position: absolute;
   display: block;
   bottom: .5rem;
   right: 1rem;
@@ -45,62 +45,27 @@ span i
 {
     color: wheat;
 }
-form #fila1{
+/* .contenedor-registro aside{
     display: flex;
-    width:310px;
-    height: 15px;
-    flex-flow: row wrap;
-    margin-bottom: 9px;
-}
-form #fila2{
-    display: flex;
-    width:310px;
-    height: 15px;
-    margin-bottom: 9px;
-    flex-flow: row wrap;
+    flex-direction: column;
     
-}
-form #fila3{
-    display: flex;
-    width:310px;
-    height: 15px;
-    margin-bottom: 9px;
-    flex-flow: row wrap;
+    align-items: flex-start;
+  
     
-}
-form #fila4{
+} */
+form #fila1, #fila2, #fila3, #fila4, #fila5, #fila6, #fila7{
     display: flex;
-    width:310px;
-    height: 15px;
-    margin-bottom: 9px;
-    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 4px;
     
-}
-form #fila5{
-    display: flex;
-    width:310px;
-    height: 15px;
-    margin-bottom: 9px;
-    flex-flow: row wrap;
+    height: 45px;
     
-}
-form #fila6{
-    display: flex;
-    width:310px;
-    height: 15px;
-    margin-bottom:8px;
+    /* width:310px;
     flex-flow: row wrap;
-    
+    margin-bottom: 9px; */
 }
-form #fila7{
-    display: flex;
-    width:310px;
-    height: 35px;
-    margin-bottom: 9px;
-    margin-right: 205px;
-    flex-flow: row wrap;
-    
-}
+
+
 
 .contenedor-registro label{
     display: none;
@@ -112,12 +77,12 @@ form #fila7{
 }
 .contenedor-registro input{
     display: flex;
-   font-size: 10px;
+    font-size: 11px;
     margin: auto;
-    text-align: start;
+    text-align: center;
     padding: 1px;
-    width: 5.8rem;
-    border: rgba(166, 3, 207, 0.942) 2px solid;
+    width: 105px;
+    border: rgba(166, 3, 207, 0.796) 2px solid;
     
 }
 input[type="file" i]{
@@ -129,32 +94,49 @@ input[type="file" i]{
 }
 
 .contenedor-registro button{
-    position: relative;
-    margin-top: 25px;
-    left: 100px;
-    width: 110px;
-    height: 30px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 55%;
     text-decoration: none;
-    background-color: rgba(10, 8, 19, 0.915);
+    background-color: rgba(60, 191, 4, 0.995);
     border: none;
     padding: 2px;
-    border-radius: 3px;
-    font-size: 17px;
-    color: azure;
+    border-radius: 4px;
+    font-size: 15px;
+    color: rgb(251, 253, 253);
     
 }
-form p{
+form .p-register{
     margin: 18px 20px 14px 79px;
     
     font-size: 12px;
     color: white;
     
 }
-form p a{
+form .p-register a{
     
     background-color:rgba(233, 233, 236, 0.847);
     border-radius: 2px;
     padding: 2px;
     color: rgb(0, 8, 8);
     text-decoration:double;
+}
+
+.msg-error{
+    font-size: 9px;
+    color: red;
+    
+    white-space: nowrap;
+    
+}
+
+@media screen and (min-width: 700px) {
+    aside .contenedor-registro{
+        max-width: 550px;
+        min-width: 520px;
+    }
+    
 }
