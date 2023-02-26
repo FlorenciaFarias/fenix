@@ -94,6 +94,8 @@ nav #fig-img-tp img{
     }
     header nav{
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
         
     }
    #sec-tp{
@@ -131,11 +133,12 @@ nav #fig-img-tp img{
         
 
     }
-     #fig-img-tp img{
+    nav #fig-img-tp img{
         background-color: rgba(10, 7, 1, 0.371);
         top: 8px;
         display: flex;
         align-items: center;
+        left: 0;
     }
    
 

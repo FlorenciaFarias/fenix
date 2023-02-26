@@ -33,28 +33,29 @@ main .banner-home{
 }
 
 /**TENDENCIAS  SECCION 1**/
-.tendencias{
+.tendencias, .contenedor-tendencias-turnos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    width: 85%;
-    background: rgba(0, 0, 0, 0.74);
-    border-color: black;
-    border-radius: 7px;
-    box-shadow: 20px 10px 50px rgb(121, 121, 121);
+    width: 89%;
+   
 }
 
 .tendencias h2{
     text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
     padding: 3px;
-    border-radius:2px;
+    font-size: 1.3rem;
     flex: 0 0 100%;
     color: white;
     
 }
 
 .tendencias .item-tendencia{
+    border-radius: 4px;
+    border: 3px solid rgba(14, 0, 144, 0.626);
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ main .banner-home{
     border: 2px solid rgba(174, 61, 174, 0.626);
     border-radius: 5px;
 }
-.tendencias .item-tendencia .img-tendencia, .img-block-calendario{
+.tendencias .item-tendencia .img-tendencia{
     margin: auto;
     width: 45%;
     border-radius: 7px;
@@ -98,13 +99,7 @@ main .banner-home{
 #art-oculto{
     display: none;
 }
-.caja-agendar-turno h2{
-    width: 60%;
-    font-size: 16px;
-    padding: 3px;
-    border-radius:2px;
-    background-color: rgba(112, 112, 112, 0.795);
-}
+
 .block-navegacion{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -130,27 +125,46 @@ section .tienda-catalogo{
 
 }
 
-/**AGENDA  SECCION 2**/
+/**AGENDA y CATALOGO SECCION 2**/
 
-.block-servicios-calendario{
-    width: 90%;
-    margin: auto;
-    align-items: center;
+ .contenedor-tendencias-turnos article{
+    width: 100%;
+    background: rgba(7, 7, 1, 0.442);
+    padding: 3px;
+    margin-bottom: 8px;
+    border: 3px solid rgba(14, 0, 144, 0.626);
+    margin-top: 2px;
+    border-radius: 4px;
+    
+}
+.contenedor-tendencias-turnos .caja-tendencia{
     display: flex;
     flex-direction: column;
-    flex: 0 0 90%;
-    border-radius: 7px;
-    box-shadow: 20px 10px 50px rgb(121, 121, 121);
+    align-items: center;
+    width: 100%;
+    
 }
-article #nav-servicios-a{
-    display: flex;
-    border: 1px solid gray;
-}
-.block-servicios-calendario .etiqueta-a-calendario{
-    color: rgb(253, 253, 253);
+.contenedor-tendencias-turnos h2{
+    margin-bottom: 4px;
+    font-size: 1.2rem;
     text-align: center;
-    font-size: 1rem;
-    background: black;
+    color: white;
+}
+.caja-tendencia img{
+    width: 75%;
+    padding: 5px;
     margin-bottom: 4px;
     
 }
+.caja-tendencia a{
+    padding: 8px;
+    margin-top: 4px;
+    border: 3px solid rgba(14, 0, 144, 0.626);
+    text-align: center;
+    width: 50%;
+    background: black;
+    border-radius: 8px;
+ 
+}
+
+

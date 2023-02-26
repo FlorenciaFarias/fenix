@@ -7,7 +7,7 @@
    div nav a{
         color: white;
     }
-    .tendencias{
+    .tendencias, .contenedor-tendencias-turnos{
         flex-direction: row;
     }
     .tendencias h2{
@@ -71,7 +71,7 @@
 }
 
 @media screen and (min-width: 1000px){
-    .tendencias{
+    .tendencias, .contenedor-tendencias-turnos{
         justify-content: space-around;
     }
     .tendencias .item-tendencia{
