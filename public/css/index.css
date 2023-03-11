@@ -13,25 +13,29 @@ a{
 
 /*main*/
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.764), rgba(0, 0, 0, 0.579)), url('/images/background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.711)), url('/images/background.jpg');
     background-size: 100%;
+}
+main .banner-home{
+    width: 89%;
 }
 main .banner-home{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;  
-    
+    margin-bottom: 15px;  
+    margin-top: 5px;
+    width: 100%;
+    height: 240px;
+   
 }
 .banner-home .img-home{
-    width: 89%;
-    height: 240px;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 2px;
     border-radius:2px ;
 
 }
-
 /**TENDENCIAS  SECCION 1**/
 .tendencias, .contenedor-tendencias-turnos{
     display: flex;
@@ -39,13 +43,16 @@ main .banner-home{
     justify-content: center;
     margin: auto;
     width: 89%;
-   
+    
+}
+.tendencias{
+    align-items: center;
 }
 
 .tendencias h2{
     text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     padding: 3px;
     font-size: 1.3rem;
     flex: 0 0 100%;
@@ -53,20 +60,27 @@ main .banner-home{
     
 }
 
-.tendencias .item-tendencia{
+.tendencias .item-tendencia, #art-oculto{
+    max-height: 300px;
+    min-height: 319px;
     border-radius: 4px;
-    border: 3px solid rgba(14, 0, 144, 0.626);
+    border: 3px double rgba(14, 0, 144, 0.626);
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     padding: 5px;
     flex: 0 0 80%;
     margin-bottom: 4px;
-    color: wheat;
+    color: white;
     text-align: center;
     
 }
+.item-tendencia h4{
+    font-size: 1.3rem;
+}
 .item-tendencia h5{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
     color: greenyellow;
 }
 .tendencias article:hover{
@@ -74,15 +88,19 @@ main .banner-home{
     border: 2px solid rgba(174, 61, 174, 0.626);
     border-radius: 5px;
 }
-.tendencias .item-tendencia .img-tendencia{
+.tendencias .img-tendencia{
     margin: auto;
-    width: 45%;
-    border-radius: 7px;
+    width: 200px;
+    border-radius: 4px;
    
 }
 
 .item-p-tendencia{
+
+    font-size: 0.8rem;
+    text-align: center;
     margin-bottom: 8px;
+    
 }
 .sacar-turno-home-articulo{
     display: flex;
@@ -91,7 +109,7 @@ main .banner-home{
     justify-content: center;
     width: 50%;
     background: black;
-    border: 3px solid rgba(14, 0, 144, 0.626);
+    border: 3px double rgba(14, 0, 144, 0.626);
     color: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 8px;
@@ -107,11 +125,12 @@ main .banner-home{
     height: 30px;
 }
 section .tienda-catalogo{
-    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    background-color: rgb(37, 85, 100);
     display: flex;
     margin: auto;
-    border-radius: 6px;
-    width: 85%;
+    border-radius: 4px;
+    width: 89%;
     text-decoration: none;
     justify-content: space-between;
 }
@@ -126,44 +145,50 @@ section .tienda-catalogo{
 }
 
 /**AGENDA y CATALOGO SECCION 2**/
-
+.contenedor-tendencias-turnos{
+    width: 85%;
+}
  .contenedor-tendencias-turnos article{
     width: 100%;
-    background: rgba(7, 7, 1, 0.442);
-    padding: 3px;
-    margin-bottom: 8px;
-    border: 3px solid rgba(14, 0, 144, 0.626);
-    margin-top: 2px;
-    border-radius: 4px;
-    
-}
-.contenedor-tendencias-turnos .caja-tendencia{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    border: 1px solid green;
+    margin-bottom: 8px;
+   
     
+}
+.contenedor-tendencias-turnos .caja-tendencia{
+   background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 89%;
+    border: 1px solid rgb(37, 85, 100);
 }
 .contenedor-tendencias-turnos h2{
     margin-bottom: 4px;
     font-size: 1.2rem;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .caja-tendencia img{
-    width: 75%;
-    padding: 5px;
+    border: 1px double rgb(37, 85, 100);
+    width: 150px;
+    border-radius: 4px;
     margin-bottom: 4px;
     
 }
 .caja-tendencia a{
-    padding: 8px;
-    margin-top: 4px;
-    border: 3px solid rgba(14, 0, 144, 0.626);
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 2px double rgb(37, 85, 100);
     text-align: center;
     width: 50%;
-    background: black;
-    border-radius: 8px;
+    background: rgb(0, 0, 0);
+    border-radius: 8px; 
  
 }
 

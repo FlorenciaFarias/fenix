@@ -19,7 +19,9 @@
     text-align: center;
 }
 .contenedor-login{
-    background: rgb(2 109 104 / 63%);
+    background: rgb(0,118,194);
+    background: linear-gradient(342deg, rgba(0,118,194,0.9809173669467787) 6%,
+ rgba(17,24,159,0.9809173669467787) 27%, rgba(1,22,14,0.9613095238095238) 44%);
     min-width: 250px;
     max-width: 260px;
     border-radius: 10px;

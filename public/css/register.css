@@ -11,13 +11,15 @@ main{
 
 .contenedor-registro{
     display: flex;
-    background: rgb(62 20 87 / 46%);
+    background: rgb(0,118,194);
+background: linear-gradient(142deg, rgba(0,118,194,0.9809173669467787) 4%, rgba(17,24,159,0.9809173669467787) 12%, rgba(1, 22, 14, 0.882) 29%);
     min-width: 275px;
     max-width: 300px;
+    max-height: 400px;
     justify-content: center;
     border-radius: 10px;
     margin: auto;
-    padding: 6px;
+    padding: 10px;
     flex-flow: column wrap;
     
 }
@@ -26,46 +28,24 @@ main{
     
    
 }
-form span{
-    color:rgb(165, 21, 144);
-    max-width: 420px;
-    position: relative;
-}
-form span #form-i {
-  position: absolute;
-  display: block;
-  bottom: .5rem;
-  right: 1rem;
-  color: wheat;
-  
-  user-select: none;
-  cursor: pointer;
-}
-span i
-{
-    color: wheat;
-}
-/* .contenedor-registro aside{
+.register-aside{
     display: flex;
-    flex-direction: column;
-    
-    align-items: flex-start;
-  
-    
-} */
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+}
+
 form #fila1, #fila2, #fila3, #fila4, #fila5, #fila6, #fila7{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 4px;
-    
-    height: 45px;
+    width: 90%;
+    height: 35px;
     
     /* width:310px;
     flex-flow: row wrap;
     margin-bottom: 9px; */
 }
-
-
 
 .contenedor-registro label{
     display: none;
@@ -82,7 +62,7 @@ form #fila1, #fila2, #fila3, #fila4, #fila5, #fila6, #fila7{
     text-align: center;
     padding: 1px;
     width: 105px;
-    border: rgba(166, 3, 207, 0.796) 2px solid;
+    border: rgba(255, 255, 255, 0.89) 2px solid;
     
 }
 input[type="file" i]{
@@ -101,32 +81,32 @@ input[type="file" i]{
     height: 25px;
     width: 55%;
     text-decoration: none;
-    background-color: rgba(60, 191, 4, 0.995);
-    border: none;
+    background-color: rgba(0, 7, 135, 0.995);
+    border: 1px double rgb(5, 0, 58);
     padding: 2px;
     border-radius: 4px;
     font-size: 15px;
-    color: rgb(251, 253, 253);
+    color: rgb(255, 255, 255);
     
 }
 form .p-register{
-    margin: 18px 20px 14px 79px;
-    
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     color: white;
     
 }
 form .p-register a{
-    
-    background-color:rgba(233, 233, 236, 0.847);
-    border-radius: 2px;
-    padding: 2px;
-    color: rgb(0, 8, 8);
-    text-decoration:double;
+
+    padding: 4px;
+    color: rgb(8, 165, 165);
+    text-decoration: double;
 }
 
 .msg-error{
-    font-size: 9px;
+    font-size: 7px;
     color: red;
     
     white-space: nowrap;

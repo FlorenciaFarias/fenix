@@ -13,20 +13,25 @@
     .tendencias h2{
         margin-bottom: 8px;
     }
+    #art-oculto{
+        display: block;
+       
+    }
     .item-tendencia h4{
         color: white;
-        font-size: 17px;
+        font-size: 1.2rem;
     }
     .item-tendencia h5{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.3rem;
 
     }
     .item-tendencia .item-p-tendencia{
         color: white;
     }
-    .tendencias .item-tendencia{
+    .tendencias .item-tendencia, #art-oculto{
         flex: 0 0 calc(75% - 12px);
+        min-height: 300px;
         margin-top: 10px;
         padding: 5px;
       
@@ -35,9 +40,6 @@
             box-shadow: 10px 20px 40px rgba(128, 128, 128, 0.759);
             border: 2px solid rgba(14, 0, 144, 0.626);
             
-        }
-        #art-oculto{
-            display: block;
         }
         .tendencias .img-tendencia{
             width: 45%;
@@ -49,43 +51,60 @@
             width: 40%;
             border-radius: 7px;
         }
-        .tendencias a:hover{
+       
+        .item-tendencia a:hover{
+            display: block;
             background: rgb(12, 12, 12);
             color: rgb(255, 255, 255);
             border: rgb(255, 255, 255) solid 1px;
             
         }
-
-
         /*navegación*/
 
         .tienda-catalogo .nav-tienda-catalogo{
             font-size: 1rem;
-            
-        
         }
         .tienda-catalogo  a:hover{
             font-size: 1.1rem;
         }
 
+        .contenedor-tendencias-turnos{
+            max-width: 65%;
+            
+           
+        }
+        .contenedor-tendencias-turnos article{
+            min-height: 320px;
+            max-height: 325px;
+        }
 }
 
 @media screen and (min-width: 1000px){
-    .tendencias, .contenedor-tendencias-turnos{
-        justify-content: space-around;
+    .tendencias{
+        justify-content: space-between;
+        align-items: center;
     }
-    .tendencias .item-tendencia{
+    .tendencias .item-tendencia, #art-oculto{
         flex: 0 0 25%;
-        
+        min-height: 320px;
+        max-height: 325px;
       
      }
-    #art-oculto{
-        display: block;
-    }
+  
     .sacar-turno-home-articulo{
-           
         width: 50%;
         border-radius: 7px;
+    }
+    .contenedor-tendencias-turnos{
+        max-width: 89%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+    }
+   
+    .contenedor-tendencias-turnos article{
+        width: 40%;
+        
     }
    
 }
