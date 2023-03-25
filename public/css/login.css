@@ -3,31 +3,39 @@
     justify-content: center;
     margin: auto;
 }
-.imagen-login img{
-    width: 80%;
-    height: 90px;
-    margin-bottom: 8px;
-    margin-top: -11px;
-    border: 1px solid rgb(3, 3, 86);
+
+.contenedor-login h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
 
 }
-
+.contenedor-login form{
+    width: 100%;
+    text-align: center;
+}
 .contenedor-login{
-    background: rgb(114,236,10);
-    background: linear-gradient(0deg, rgba(236, 10, 225, 0.295) 1%, rgba(237, 237, 237, 0.82) 11%);
-    width: 80%;
-    height: 320px;
-    border-radius: 6px;
+    background: rgb(0,118,194);
+    background: linear-gradient(342deg, rgba(0,118,194,0.9809173669467787) 6%,
+ rgba(17,24,159,0.9809173669467787) 27%, rgba(1,22,14,0.9613095238095238) 44%);
+    min-width: 250px;
+    max-width: 260px;
+    border-radius: 10px;
     margin: auto;
     padding: 10px;
-    border: 1px solid rgb(14, 3, 63);
+    border: 2px solid rgb(4, 17, 21);
 }
 
 .contenedor-login label{
     margin-top: 6px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     display: flex;
     font-size: 12px;
+    color: white;
     justify-content: center;
 }
 
@@ -35,39 +43,50 @@
     display: flex;
     width: 55%;
     margin: auto;
+    border-radius: 4px;
+    font-size: 10px;
     text-align: center;
-    padding: 1px;
-    border: rgba(21, 4, 106, 0.815) 1px solid;
+    padding: 3px;
+    border: rgb(101, 5, 105) 1px solid;
     
+}
+div .check{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
 }
 
 .contenedor-login button{
-    position: relative;
-    margin-top: 25px;
-    left: 100px;
-    width: 110px;
+    
+    display: flex;    
+    width: 55%;
+   
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
     text-decoration: none;
-    background-color: rgba(12, 2, 63, 0.815);
+    background-color: rgba(10, 8, 19, 0.915);
     border: none;
     padding: 2px;
-    border-radius: 3px;
-    font-size: 17px;
+    border-radius: 4px;
+    font-size: 15px;
     color: azure;
 
 }
 
 .contenedor-login p{
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 16px;
     margin-bottom: 4px;
-    text-align: center;
+    margin-left: 28px;
     
 }
 .boton-p  .boton-registrarse{
-    background-color:rgba(12, 2, 63, 0.815);
+    background-color:rgba(200, 198, 211, 0.815);
     border-radius: 3px;
     padding: 2px;
-    color: azure;
+    color: rgb(0, 0, 0);
     text-decoration:double;
 }
 .boton-p{
@@ -75,3 +94,32 @@
     flex-direction: column;
 }
 
+@media screen and (min-width: 700px) {
+    .contenedor-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        max-width: 500px;
+       min-width: 490px;
+       height: 400px;
+    
+        padding: 10px;
+      
+    }
+    .contenedor-login h2{
+        border-right: 1px solid rgba(255, 255, 255, 0.532) ;
+        font-size: 35px;
+        
+    }
+    .contenedor-login input{
+        
+        width: 45%;
+        font-size: 12px;
+        padding: 4px;
+    }
+    .contenedor-login button{
+        width: 45%;
+        font-size: 14px;
+    }
+}

@@ -7,84 +7,125 @@
    div nav a{
         color: white;
     }
-    .tendencias{
+    .tendencias, .contenedor-tendencias-turnos{
         flex-direction: row;
     }
     .tendencias h2{
         margin-bottom: 8px;
     }
+    #art-oculto{
+        display: block;
+
+    }
     .item-tendencia h4{
         color: white;
-        font-size: 17px;
+        font-size: 1.2rem;
     }
     .item-tendencia h5{
         font-weight: bold;
-        font-size: 20px;
-        color: greenyellow;
-    }.item-tendencia .item-p-tendencia{
+        font-size: 1.3rem;
+
+    }
+    .item-tendencia .item-p-tendencia{
         color: white;
     }
-    .tendencias .item-tendencia{
+    .tendencias .item-tendencia, #art-oculto{
         flex: 0 0 calc(75% - 12px);
+        min-height: 300px;
         margin-top: 10px;
         padding: 5px;
-      
+
         }
         .tendencias .item-tendencia:hover{
             box-shadow: 10px 20px 40px rgba(128, 128, 128, 0.759);
             border: 2px solid rgba(14, 0, 144, 0.626);
-            
-        }
-        #art-oculto{
-            display: block;
+
         }
         .tendencias .img-tendencia{
             width: 45%;
             height: 100px;
-           
+
         }
         .sacar-turno-home-articulo{
-           
+
             width: 40%;
             border-radius: 7px;
         }
-        .tendencias a:hover{
+
+        .item-tendencia a:hover{
+            display: block;
             background: rgb(12, 12, 12);
             color: rgb(255, 255, 255);
             border: rgb(255, 255, 255) solid 1px;
-            
+
         }
-
-
         /*navegación*/
 
         .tienda-catalogo .nav-tienda-catalogo{
             font-size: 1rem;
-            
-        
         }
         .tienda-catalogo  a:hover{
             font-size: 1.1rem;
         }
 
+        .contenedor-tendencias-turnos{
+            max-width: 69%;
+            display: flex; 
+
+
+        }
+
+        .contenedor-tendencias-turnos article{         
+            display: flex; 
+
+        }
+        .caja-tendencia{
+            display: flex;
+            min-height: 370px;
+            max-height: 385px;
+            justify-content: space-evenly;
+        }
+        .contenedor-tendencias-turnos h2{
+            margin-bottom: 8px;
+            font-size: 1.5rem;
+      
+        }
+        .caja-tendencia img{
+            border: 1px double rgb(37, 85, 100);
+            width: 270px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+            
+        }
 }
+
 
 @media screen and (min-width: 1000px){
     .tendencias{
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
-    .tendencias .item-tendencia{
+    .tendencias .item-tendencia, #art-oculto{
         flex: 0 0 25%;
-        
-      
+        min-height: 320px;
+        max-height: 325px;
+
      }
-    #art-oculto{
-        display: block;
-    }
+
     .sacar-turno-home-articulo{
-           
         width: 50%;
         border-radius: 7px;
     }
-   
+    .contenedor-tendencias-turnos{
+        max-width: 89%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+    }
+
+    .contenedor-tendencias-turnos article{
+        width: 40%;
+
+    }
+
 }

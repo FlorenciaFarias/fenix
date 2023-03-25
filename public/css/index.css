@@ -13,72 +13,107 @@ a{
 
 /*main*/
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.764), rgba(0, 0, 0, 0.579)), url('/images/background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.552), rgba(137, 135, 135, 0.251)), url('/images/background.jpg');
     background-size: 100%;
+}
+main .banner-home{
+    width: 89%;
 }
 main .banner-home{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;  
-    
+    margin-bottom: 15px;  
+    margin-top: 5px;
+    width: 100%;
+    height: 240px;
+   
 }
 .banner-home .img-home{
-    width: 90%;
-    height: 250px;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 2px;
     border-radius:2px ;
 
 }
-
 /**TENDENCIAS  SECCION 1**/
+.titulo-cortes{
+    border: 1px solid black;
+    background-color: rgb(0, 14, 18);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 4px;
+    width: 89%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+
 .tendencias{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    width: 85%;
-    background: rgba(0, 0, 0, 0.74);
-    border-color: black;
-    border-radius: 7px;
-    box-shadow: 20px 10px 50px rgb(121, 121, 121);
+    width: 89%;
+    align-items: center;
+    
 }
 
 .tendencias h2{
     text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
     padding: 3px;
-    border-radius:2px;
+    font-size: 1.3rem;
     flex: 0 0 100%;
     color: white;
     
 }
 
-.tendencias .item-tendencia{
+.tendencias .item-tendencia, #art-oculto{
+    min-height: 300px;
+    max-height: 319px;
+    border-radius: 4px;
+    border: 3px double rgba(14, 0, 144, 0.626);
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     padding: 5px;
     flex: 0 0 80%;
     margin-bottom: 4px;
-    color: wheat;
+    color: white;
     text-align: center;
     
+}
+.item-tendencia h4{
+    font-size: 1.3rem;
+}
+.item-tendencia h5{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: greenyellow;
 }
 .tendencias article:hover{
     
     border: 2px solid rgba(174, 61, 174, 0.626);
     border-radius: 5px;
 }
-.tendencias .item-tendencia .img-tendencia, .img-block-calendario{
+.tendencias .img-tendencia{
     margin: auto;
-
-    border-radius: 7px;
+    width: 200px;
+    border-radius: 4px;
    
 }
 
 .item-p-tendencia{
+    font-size: 0.8rem;
+    text-align: center;
     margin-bottom: 8px;
+    
 }
 .sacar-turno-home-articulo{
     display: flex;
@@ -87,7 +122,7 @@ main .banner-home{
     justify-content: center;
     width: 50%;
     background: black;
-    border: 3px solid rgba(14, 0, 144, 0.626);
+    border: 3px double rgba(14, 0, 144, 0.626);
     color: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 8px;
@@ -95,13 +130,7 @@ main .banner-home{
 #art-oculto{
     display: none;
 }
-.caja-agendar-turno h2{
-    width: 60%;
-    font-size: 16px;
-    padding: 3px;
-    border-radius:2px;
-    background-color: rgba(112, 112, 112, 0.795);
-}
+
 .block-navegacion{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -109,11 +138,12 @@ main .banner-home{
     height: 30px;
 }
 section .tienda-catalogo{
-    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    background-color: rgb(0, 14, 18);
     display: flex;
     margin: auto;
-    border-radius: 6px;
-    width: 85%;
+    border-radius: 4px;
+    width: 89%;
     text-decoration: none;
     justify-content: space-between;
 }
@@ -127,27 +157,60 @@ section .tienda-catalogo{
 
 }
 
-/**AGENDA  SECCION 2**/
-
-.block-servicios-calendario{
-    width: 90%;
-    margin: auto;
-    align-items: center;
+/**AGENDA y CATALOGO SECCION 2**/
+.contenedor-tendencias-turnos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;  
+    max-width: 70%;
+    min-width: 65%;
+}
+ .contenedor-tendencias-turnos article{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    flex: 0 0 90%;
-    border-radius: 7px;
-    box-shadow: 20px 10px 50px rgb(121, 121, 121);
-}
-article #nav-servicios-a{
-    display: flex;
-    border: 1px solid gray;
-}
-.block-servicios-calendario .etiqueta-a-calendario{
-    color: rgb(253, 253, 253);
-    text-align: center;
-    font-size: 1rem;
-    background: black;
-    margin-bottom: 4px;
+    align-items: center;
+    border: 1px double rgb(178, 11, 189);
+    margin-bottom: 8px;
+    
     
 }
+.contenedor-tendencias-turnos .caja-tendencia{
+    max-height: 300px;
+    min-height: 280px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(37, 85, 100);
+}
+.contenedor-tendencias-turnos h2{
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.caja-tendencia img{
+    border: 1px double rgb(178, 11, 189);
+    width: 200px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    
+}
+.caja-tendencia a{
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border: 2px double rgb(178, 11, 189);
+    text-align: center;
+    width: 50%;
+    background: rgb(0, 0, 0);
+    border-radius: 8px; 
+ 
+}
+
+

@@ -2,38 +2,40 @@
 <body>
 <%- include('../partials/header') %> 
 <main>
-    <section>
+    <section class="banner">
         <figure class="banner-home">
             <img class="img-home" src="images/banner.jpg" alt="portada de barbero">
         </figure>
     </section>
 
+            <h2 class="titulo-cortes">¡Tendencias en cortes!</h2>
+       
+  
 <section class="tendencias">
-    <h2>¡Tendencias en cortes!</h2>
-
         <article class="item-tendencia">
+            <h4>Corte</h4>
                 <img class="img-tendencia" src="images/corte.jpg" alt="">
-                <h4>Corte</h4>
                 <h5>$444</h5>
                 <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
                 <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
 
         </article>
         <article class="item-tendencia">
-            <img class="img-tendencia" src="images/corte.jpg" alt="">
             <h4>Corte</h4>
+            <img class="img-tendencia" src="images/corte.jpg" alt="">
             <h5>$444</h5>
-            <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
+            <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur. Hkjalsdjlakjsdlkadl kajsdlkajslkdj aklsjk ajslk ajskdj. aksjdlkasjd aj klas jajaj laksjals</p>
             <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
         </article>
+
         <article class="item-tendencia" id="art-oculto">
-            <img class="img-tendencia" src="images/corte.jpg" alt="">
             <h4>Corte</h4>
+            <img class="img-tendencia" src="images/corte.jpg" alt="">
             <h5>$444</h5>
             <p class="item-p-tendencia">Lorem ipsum, dolor sit amet consectetur.</p>
             <a class="sacar-turno-home-articulo" href="/servicios/agenda">Sacar turno</a>
 
-    </article>
+        </article>
 </section>
 <!-- barra de navegación-->
     <section class="block-navegacion">
@@ -44,21 +46,25 @@
     </section>
 
 
-<!--<section class="tendencias">
-    <h2>¡Sobre mí!</h2>
-        <article>
-            <div class="caja-tendencia">
-                <img class="img-tendencia" src="images/mi.jpg" alt="">
-                <a href="/servicios/agenda">Sacar turno</a>
-            </div>
-            <div class="caja-tendencia">
-                <img class="img-tendencia" src="images/calendario.jpg" alt="">
-                <a href="/servicios/agenda">Sacar turno</a>
+<section class="contenedor-tendencias-turnos">
+    <article>
+        <div class="caja-tendencia">
+            <h2>¡Agenda tu turno!</h2>
+                <img class="img-tendencia" src="images/calendario.jpg" alt="calendario">
+                <a href="/servicios/agenda">Agendar turno</a>
             </div>
         </article>
 
+        <article>
+            <div class="caja-tendencia">
+                <h2>¡Precios y servicios!</h2>
+                        <img class="img-tendencia" src="images/mi.jpg" alt="catalogo de servicios">
+                        <a href="/servicios/catalogo">Catálogo</a>
+                    </div>
+                </article>
+
 </section>
--->
+
 <section>
     <figure class="banner-home">
         <img class="img-home" src="images/banner.jpg" alt="portada de barbero">
