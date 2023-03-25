@@ -15,7 +15,7 @@
     }
     #art-oculto{
         display: block;
-       
+
     }
     .item-tendencia h4{
         color: white;
@@ -34,30 +34,30 @@
         min-height: 300px;
         margin-top: 10px;
         padding: 5px;
-      
+
         }
         .tendencias .item-tendencia:hover{
             box-shadow: 10px 20px 40px rgba(128, 128, 128, 0.759);
             border: 2px solid rgba(14, 0, 144, 0.626);
-            
+
         }
         .tendencias .img-tendencia{
             width: 45%;
             height: 100px;
-           
+
         }
         .sacar-turno-home-articulo{
-           
+
             width: 40%;
             border-radius: 7px;
         }
-       
+
         .item-tendencia a:hover{
             display: block;
             background: rgb(12, 12, 12);
             color: rgb(255, 255, 255);
             border: rgb(255, 255, 255) solid 1px;
-            
+
         }
         /*navegación*/
 
@@ -69,15 +69,36 @@
         }
 
         .contenedor-tendencias-turnos{
-            max-width: 65%;
-            
-           
+            max-width: 69%;
+            display: flex; 
+
+
         }
-        .contenedor-tendencias-turnos article{
-            min-height: 320px;
-            max-height: 325px;
+
+        .contenedor-tendencias-turnos article{         
+            display: flex; 
+
+        }
+        .caja-tendencia{
+            display: flex;
+            min-height: 370px;
+            max-height: 385px;
+            justify-content: space-evenly;
+        }
+        .contenedor-tendencias-turnos h2{
+            margin-bottom: 8px;
+            font-size: 1.5rem;
+      
+        }
+        .caja-tendencia img{
+            border: 1px double rgb(37, 85, 100);
+            width: 270px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+            
         }
 }
+
 
 @media screen and (min-width: 1000px){
     .tendencias{
@@ -88,9 +109,9 @@
         flex: 0 0 25%;
         min-height: 320px;
         max-height: 325px;
-      
+
      }
-  
+
     .sacar-turno-home-articulo{
         width: 50%;
         border-radius: 7px;
@@ -99,12 +120,12 @@
         max-width: 89%;
         flex-flow: row nowrap;
         justify-content: space-between;
-        
+
     }
-   
+
     .contenedor-tendencias-turnos article{
         width: 40%;
-        
+
     }
-   
+
 }
